@@ -1,0 +1,8 @@
+PERGUNTA 1 (v2): Context vs Zustand - qual usar?
+Minha nova resposta:Context é quando fazemos compartilhamentos de dados entre componentes ele é bom para dados que mudam pouco ja o Zustand é uma biblioteca mais robusta ele serve tambem para compartilhamentos de dados e manipulação de estados mas ele é bom para dados que mudam muito como um carrinho de compras por exemplo
+
+PERGUNTA 3 (v2): Prop drilling - qual é REALMENTE o problema?
+Minha nova resposta: é um problema pois é um problema de manutenção pois fazer um prop em cada componentes em cascata por isso a utilidade do Context
+
+PERGUNTA 4 (v2): Como otimizar lista 10k items (não dados, renderização)?
+Minha nova resposta: Eu nao carregaria na tela todos os 10k de item de uma vez, via primeiro o plano de negocio o que é importante mostrar como os 20 primeiro, os 20 melhores ou algo tipo e teria um botao ou um filtro pra mostrar mais.

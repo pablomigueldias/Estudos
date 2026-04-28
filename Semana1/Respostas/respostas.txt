@@ -1,0 +1,15 @@
+PERGUNTA 1: Context vs Zustand - qual usar em cada caso?
+Minha resposta honesta (pode estar errada): O Context serve pra compartilhar dados entre componentes. O Zustand é uma biblioteca pra gerenciar estados.
+
+PERGUNTA 2: Se você fosse estruturar um projeto React GRANDE (tipo Trello), como faria?
+Minha resposta honesta: Eu primeiro teria uma previa de como seria essa tela, depois eu esturaria de como seria esses dados como eu pegaria esses dados e de onde seria, faria a tela estatica primeiro no React e ia incrementando as funcionalidades por partes para evitar possiveis erros
+
+PERGUNTA 3: O que é "prop drilling"? Por que é problema?
+Minha resposta honesta: Prop drilling é um problema quando nao usa o Context voce começa usar prop em cascata e acaba atrapalhando a performace
+
+
+PERGUNTA 4: Como você otimizaria uma lista com 10k items em React?
+Minha resposta honesta: Eu primeiro veria se tinha duplicidades de dados e tambem se tem valores nulos onde nao era pra ter, tentando deixar o mais atomico possivel
+
+PERGUNTA 5: SSR vs SSG - qual diferença?
+Minha resposta honesta: O SSR ele gera o site no servidor e depois manda para o usuario pra aparecer instantaniamente sem o ssr o usuario geraria primeiro o javascript pra gerar o html e isso torna mais lento, ja o SSG é ideal para conteudo estatico ele leva diretamente no servidor e quando muda algo no site precisa fazer um rebuild pra atualizar o site

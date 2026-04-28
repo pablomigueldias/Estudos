@@ -1,0 +1,92 @@
+import { useState } from 'react';
+
+export function RenderTest() {
+
+  const [count, setCount] = useState(0);
+
+  const [name, setName] = useState('');
+
+  
+
+  console.log('RENDER: Parent renderizou!');
+
+  
+
+  return (
+
+    <div style={{ padding: '20px', border: '2px solid blue' }}>
+
+      <h2>Parent</h2>
+
+      <p>Count: {count}</p>
+
+      <p>Name: {name}</p>
+
+      <input 
+
+        value={name} 
+
+        onChange={(e) => setName(e.target.value)}
+
+        placeholder="Digite seu nome"
+
+      />
+
+      <button onClick={() => setCount(count + 1)}>
+
+        Count: {count}
+
+      </button>
+
+      
+
+      <Child key={count} count={count} />
+
+    </div>
+
+  );
+
+}
+
+function Child({ count }) {
+
+  console.log('RENDER: Child renderizou!');
+
+  
+
+  return (
+
+    <div style={{ padding: '10px', border: '2px solid red', marginTop: '10px' }}>
+
+      <h3>Child</h3>
+
+      <p>Count recebido: {count}</p>
+
+    </div>
+
+  );
+
+}
+
+
+
+
+
+
+
+Digite no input "Pablo"
+
+Quantas vezes "RENDER: Parent renderizou!" aparece?
+Quantas vezes "RENDER: Child renderizou!" aparece?
+Clique no botão Count
+
+Como o console log esta antes do return ele aparece ja antes de fazer qualquer coisa entao 1 de cada e codigo se ele nao é uma função que voce pode determinar onde sera executado o restante é linha por linha entao quando digita qualquer tecla ele faz o que tem que fazer como ta o target value vai aparecer os dois console a cada tecla que apertar e o botao vai aparecer os dois console a cada vez que clicar pq vai passar linha por linha e volta pro inicio da linha com os dois console iniciais
+
+
+
+
+
+
+
+
+Qual diferença?
